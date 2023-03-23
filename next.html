@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time</title>
+</head>
+<body>
+    <h1>Display Current Date and Time</h1>
+	<button onclick="displayDateTime()">Show Current Date and Time</button>
+	<p id="datetime"></p>
+
+    <script>
+        function displayDateTime() {
+			let currentDate = new Date();
+			let datetimeElement = document.getElementById("datetime");
+			datetimeElement.innerHTML = "Current Date and Time: " + currentDate;
+		}
+
+    </script>
+</body>
+</html>
